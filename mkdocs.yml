@@ -1,0 +1,25 @@
+site_name: Documentation
+
+theme:
+  name: material
+  font:
+    text: Mulish
+  logo: images/logo-chainapi-white.svg
+
+copyright: Copyright &copy; 2023 ChainAPI, Inc.
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/chainapi
+      name: ChainAPI on Twitter
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/chainapi
+      name: ChainAPI on Medium
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/company/chainapi
+      name: ChainAPI on LinkedIn
+
+extra_css:
+  - stylesheets/extra.css
