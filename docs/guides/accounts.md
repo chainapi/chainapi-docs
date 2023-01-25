@@ -2,7 +2,7 @@
 title: Registration
 ---
 
-# Registration
+# Accounts
 
 <!-- If you change the following paragraph, change it in the README. -->
 
@@ -15,7 +15,7 @@ linked to your ChainAPI account. When you return to ChainAPI, you'll be able to
 choose whether to login using your email address or by connecting with your
 Metamask wallet.
 
-## Create an Account
+## Registration
 
 ???+ info "Existing Metamask Users"
 

@@ -7,7 +7,7 @@ title: Overview
 The **How to Guides** mimic different sections of the ChainAPI UI and provide
 insight about the different steps to complete their workflow.
 
-## [Registration](registration.md)
+## [Accounts](accounts.md)
 
 <!-- If you change the following paragraph, change it in the associated doc. -->
 

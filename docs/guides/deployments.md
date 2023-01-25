@@ -14,7 +14,7 @@ There are a few things needed before creating a deployment:
 - A cloud provider account such as [AWS](https://aws.amazon.com/) or
   [GCP](https://cloud.google.com/)
 - A
-  [blockchain provider account](https://docs.api3.org/airnode/latest/concepts/chain-providers.md)
+  [blockchain provider account](https://docs.api3.org/airnode/latest/concepts/chain-providers.html)
   for the networks required
 - [Docker](https://www.docker.com/)
 

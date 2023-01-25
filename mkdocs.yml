@@ -36,6 +36,7 @@ nav:
       - "Why use ChainAPI?": "introduction/why-use-chainapi.md"
   - Guides:
       - Overview: "guides/overview.md"
-      - Registration: "guides/registration.md"
+      - Accounts: "guides/accounts.md"
       - Integrations: "guides/integrations.md"
       - Deployments: "guides/deployments.md"
+      - Workspaces: "guides/workspaces.md"
