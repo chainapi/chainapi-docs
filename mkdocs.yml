@@ -38,3 +38,4 @@ nav:
       - Overview: "guides/overview.md"
       - Registration: "guides/registration.md"
       - Integrations: "guides/integrations.md"
+      - Deployments: "guides/deployments.md"
