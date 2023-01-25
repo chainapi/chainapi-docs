@@ -23,3 +23,8 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - Introduction:
+      - "What is ChainAPI?": "index.md"
+      - "Why use ChainAPI?": "introduction/why-use-chainapi.md"
