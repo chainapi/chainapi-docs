@@ -10,14 +10,14 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v3
-
-      - name: Update gh-pages branch
-        uses: ad-m/github-push-action@master
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
-          branch: "gh-pages"
-          force: true
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          python-version: 3.x
+      - uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}-docs
+          path: .cache
+      - run: pip install mkdocs-material
+      - run: mkdocs gh-deploy
