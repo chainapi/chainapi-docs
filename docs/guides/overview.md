@@ -7,7 +7,7 @@ title: Overview
 The **How to Guides** mimic different sections of the ChainAPI UI and provide
 insight about the different steps to complete their workflow.
 
-## [Registration](guides/registration.md)
+## [Registration](registration.md)
 
 <!-- If you change the following paragraph, change it in the associated doc. -->
 
@@ -20,7 +20,7 @@ which will be linked to a ChainAPI account.
 When you return to ChainAPI, you'll be able to choose whether to login using
 your email address or by connecting with your Metamask wallet.
 
-## [Create an Integration](guides/integrations.md)
+## [Create an Integration](integrations.md)
 
 <!-- If you change the following paragraph, change it in the associated doc. -->
 
@@ -30,7 +30,7 @@ will be used to populate the files for deploying an Airnode. See
 [Deployment Files](https://docs.api3.org/airnode/latest/reference/deployment-files/) in the
 Airnode document set for more information.
 
-## [Create a Deployment](guides/deployments.md)
+## [Create a Deployment](deployments.md)
 
 <!-- If you change the following paragraph, change it in the associated doc. -->
 

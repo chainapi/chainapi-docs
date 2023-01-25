@@ -22,7 +22,7 @@ on-chain [dAPI](https://docs.api3.org/dapis/) sets.
 
 Use the ChainAPI web based app to get started. The app will step you through the
 process. If needed, there are helpful hints in the
-[User Guides](user-guides/integrations.md) of the ChainAPI documents. There
+[User Guides](guides/integrations.md) of the ChainAPI documents. There
 are two primary functions of the app:
 
 - Integrate: Creates and maintain a `config.json` file that defines an Airnode.
