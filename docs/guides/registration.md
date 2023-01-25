@@ -17,7 +17,7 @@ Metamask wallet.
 
 ## Create an Account
 
-!!! note "Existing Metamask Users"
+???+ info "Existing Metamask Users"
 
     If you are an existing MetaMask user, it is recommended that you create a
     separate, dedicated MetaMask wallet specifically for ChainAPI using a new seed
