@@ -4,8 +4,6 @@ title: Why use ChainAPI?
 
 # Why use ChainAPI?
 
-Putting in fake update to test deployments.
-
 The simple answer is ChainAPI makes deploying an Airnode easier in comparison to
 building and deploying without, see
 [Build an Airnode](https://docs.api3.org/airnode/latest/grp-providers/guides/build-an-airnode/).

@@ -28,3 +28,5 @@ nav:
   - Introduction:
       - "What is ChainAPI?": "index.md"
       - "Why use ChainAPI?": "introduction/why-use-chainapi.md"
+  - Guides:
+      - Overview: "guides/overview.md"
