@@ -1,7 +1,8 @@
-site_name: Documentation
+site_name: ChainAPI Docs
 
 theme:
   name: material
+  favicon: images/favicon.png
   font:
     text: Mulish
   logo: images/logo-chainapi-white.svg
