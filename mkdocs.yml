@@ -41,3 +41,5 @@ nav:
       - Deployments: "guides/deployments.md"
       - Workspaces: "guides/workspaces.md"
       - "Import & Export OIS": "guides/import-export.md"
+  - Reference:
+      - Terminology: "reference/terms.md"
