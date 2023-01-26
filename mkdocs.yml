@@ -7,7 +7,10 @@ theme:
     text: Mulish
   logo: images/logo-chainapi-white.svg
 
-copyright: Copyright &copy; 2023 ChainAPI, Inc.
+copyright: >
+  <a href="https://chainapi.com/privacy-policy">Privacy Policy</a><br>
+  <a href="https://chainapi.com/terms-and-conditions">Terms & Conditions</a><br>
+  Copyright &copy; 2023 ChainAPI, Inc.
 
 extra:
   generator: false
