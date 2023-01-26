@@ -8,8 +8,8 @@ title: What is ChainAPI?
 source [Airnode](https://docs.api3.org/airnode/latest/) for free with ChainAPI’s intuitive
 step-by-step integration and deployment tools.
 
-The ChainAPI platform streamlines "API provider data to blockchain" integrations
-. Using the ChainAPI web based app, API providers configure and deploy an
+The ChainAPI platform streamlines "API provider data to blockchain" integrations.
+Using the ChainAPI web based app, API providers configure and deploy an
 Airnode which can link your API data to several blockchains. Airnode is designed
 with mechanisms that eliminate both on-chain and off-chain concerns of API
 providers. The set-and-forget framework of Airnode is all about its ease of
