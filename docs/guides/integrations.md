@@ -112,7 +112,7 @@ These are used by Airnode before submitting values back to the blockchain. There
 are several restrictions around what you can and cannot handle on the
 blockchain, and these are handled by the reserved parameters. Read more about
 reserved parameters
-[here](https://docs.api3.org/ois/v1.2/reserved-parameters.html).
+[here](https://docs.api3.org/ois/latest/reserved-parameters.html).
 
 ???+ info "Value Source"
 
@@ -144,7 +144,7 @@ You need to provide the same number of values for all reserved parameters that
 use a <b>Fixed</b> value source.
 
 Read more about
-[multiple reserved parameters](https://docs.api3.org/ois/v1.2/reserved-parameters.html#encoding-multiple-values)
+[multiple reserved parameters](https://docs.api3.org/ois/latest/reserved-parameters.html#encoding-multiple-values)
 on the Airnode documentation.
 
 ## Advanced Settings
@@ -168,7 +168,7 @@ There are three settings per snippet:
 3. Timeout - the duration in milliseconds your snippet is allowed to run in
 
 Read more about
-[Pre/Post Processing](https://docs.api3.org/ois/v1.2/processing.html) on the
+[Pre/Post Processing](https://docs.api3.org/ois/latest/processing.html) on the
 Airnode documentation.
 
 ## Completion

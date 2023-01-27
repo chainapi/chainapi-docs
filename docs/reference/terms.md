@@ -72,7 +72,7 @@ Airnode.
 
 A response from an API that indicates the API is active and working. Airnode can
 provide a webhook style
-[heartbeat](https://docs.api3.org/airnode/grp-providers/guides/build-an-airnode/heartbeat.html)
+[heartbeat](https://docs.api3.org/airnode/latest/grp-providers/guides/build-an-airnode/heartbeat.html)
 as an indicator that is is up and running. Setup of the heartbeat is an advanced
 configuration.
 

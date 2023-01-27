@@ -11,10 +11,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 🛎️ Checkout
         uses: actions/checkout@v3
 
-      - name: Deploy docs
+      - name: 🔗 Check hyperlinks
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          config-file: "link-checker-config.json"
+
+      - name: 👷🏻‍♀️ Build docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

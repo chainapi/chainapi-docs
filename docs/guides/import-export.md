@@ -6,7 +6,7 @@ title: Import & Export OIS
 
 Importing and exporting allows for easy sharing of integrations across
 workspaces, making integration backups and other use cases. Read more about OIS
-[here](https://docs.api3.org/ois/v1.2/).
+[here](https://docs.api3.org/ois/latest/).
 
 ## Import OIS
 
@@ -19,7 +19,7 @@ you. You will then be able to complete the integration.
     - Importing an OIS is only available for new integrations
     - If you are using a config.json file, copy the OIS object from within the array
       and paste into the text area provided
-      ([click here](https://docs.api3.org/ois/v1.2/example.html) for an example OIS
+      ([click here](https://docs.api3.org/ois/latest/example.html) for an example OIS
       object)
 
 ## Export OIS
