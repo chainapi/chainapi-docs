@@ -17,7 +17,7 @@ jobs:
       - name: 🔗 Check hyperlinks
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
-          config-file: "link-checker-config.json"
+          config-file: "link-check-config.json"
 
       - name: 👷🏻‍♀️ Build docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
