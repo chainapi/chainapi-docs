@@ -66,14 +66,22 @@ provider. ChainAPI will never see that key.
 
 ## New Endpoint
 
-### Path/Method
+### Name
 
-Endpoints are classified by path and method. Currently we support `GET` and
-`POST`, but as Airnode supports the different http methods we’ll add them here.
+Choose a name for the endpoint. This is how requestors on chain will identify this
+endpoint. To ensure backwards compatibility on chain, endpoint names can't be edited but
+the [path and method](#path-and-method) they map to on your API can.
+
+Endpoint names need to be unique within an integration.
+
+### Path and Method
+
+Specify the path and method on your API that the endpoint should map to. For method, `GET` and
+`POST` are supported.
 
 ### Endpoint Documentation
 
-We can capture some documentation - summary, description, and an existing
+Optionally capture some documentation for this endpoint - summary, description, and an existing
 external URL.
 
 ## Parameters
