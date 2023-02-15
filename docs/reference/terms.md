@@ -99,8 +99,8 @@ testnet, which acts as a test of such transaction execution and functionality.
 
 ### Mnemonic
 
-Sometimes refereed to a _seed phrase_ or _secret recovery phrase_. A mnemonic is
-used to create a digital wallet. ChainAPI currently supports MetaMask digital
+A mnemonic, sometimes referred to as a _seed phrase_ or _secret recovery phrase_,
+is used to create a digital wallet. ChainAPI currently supports MetaMask digital
 wallets. Hardware wallets connected to MetaMask are also supported.
 
 ### Parameters
