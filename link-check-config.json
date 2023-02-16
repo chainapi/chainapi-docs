@@ -2,7 +2,7 @@
   "replacementPatterns": [
     {
       "pattern": "/airnode/latest/",
-      "replacement": "/airnode/v0.9/"
+      "replacement": "/airnode/v0.10/"
     },
     {
       "pattern": "/ois/latest/",
@@ -10,7 +10,7 @@
     },
     {
       "pattern": "https://docs.api3.org/airnode$",
-      "replacement": "https://docs.api3.org/airnode/v0.9"
+      "replacement": "https://docs.api3.org/airnode/v0.10"
     }
   ],
   "retryOn429": true,
