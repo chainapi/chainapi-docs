@@ -27,11 +27,11 @@ jobs:
 
       - name: 💌 Slack Notification
         uses: lazy-actions/slatify@master
-        #if: failure()
+        if: failure()
         with:
           channel: "#notifications"
           commit: true
-          job_name: ChainAPI Docs ⛔️ Build Failed
+          job_name: ChainAPI Docs ⛔️ Build
           token: ${{ secrets.GITHUB_TOKEN }}
           type: ${{ job.status }}
           url: ${{ secrets.SLACK_WEBHOOK_URL }}
