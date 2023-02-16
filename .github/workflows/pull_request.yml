@@ -1,0 +1,20 @@
+name: pull_request
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+    paths-ignore:
+      - "README.MD"
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, Linux]
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v3
+
+      - name: 🔗 Check hyperlinks
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          config-file: "link-check-config.json"
