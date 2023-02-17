@@ -64,9 +64,9 @@ wants to handle your sensitive data. You will be asked to enter your API key
 when you deploy your Airnode, but that's just between you and your cloud
 provider. ChainAPI will never see that key.
 
-## New Endpoint
+## New API Endpoint
 
-### Name
+### Endpoint Name
 
 Choose a name for the endpoint. This is how requestors on chain will identify this
 endpoint. To ensure backwards compatibility on chain, endpoint names can't be edited but
