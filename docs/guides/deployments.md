@@ -115,16 +115,12 @@ the required secrets.
     will fail and need to be removed manually through your cloud provider’s web
     interface.
 
-### Download files
+### Download Files and Edit
 
-These files are needed to deploy your Airnode. Inside the zip file, you will
-find a README, a file based on your cloud provider selection, config folder, and
-output folder.
+These files are needed to deploy your Airnode.
 
-### Edit your downloaded files
-
-Use the instruction in the README and comments in the other files to add secrets
-that the `config.json` file will read.
+Follow the instructions in the `README` to update the other files with configuration
+details required for your specific setup.
 
 ### Deploy with Docker
 
@@ -182,7 +178,7 @@ These are the possible deployment statuses you might see and what they mean.
 ### Sub-deployments
 
 Editing an active deployment will create a sub-deployment with a new heartbeat
-ID. This sub-deployment will replace your main deployment once it’s status is
+ID. This sub-deployment will replace your main deployment once its status is
 **Active**.
 
 ## Troubleshooting

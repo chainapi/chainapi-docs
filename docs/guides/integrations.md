@@ -64,16 +64,24 @@ wants to handle your sensitive data. You will be asked to enter your API key
 when you deploy your Airnode, but that's just between you and your cloud
 provider. ChainAPI will never see that key.
 
-## New Endpoint
+## New API Endpoint
 
-### Path/Method
+### Endpoint Name
 
-Endpoints are classified by path and method. Currently we support `GET` and
-`POST`, but as Airnode supports the different http methods we’ll add them here.
+Choose a name for the endpoint. This is how requestors on chain will identify this
+endpoint. To ensure backwards compatibility on chain, endpoint names can't be edited but
+the [path and method](#path-and-method) they map to on your API can.
+
+Endpoint names need to be unique within an integration.
+
+### Path and Method
+
+Specify the path and method on your API that the endpoint should map to. For method, `GET` and
+`POST` are supported.
 
 ### Endpoint Documentation
 
-We can capture some documentation - summary, description, and an existing
+Optionally capture some documentation for this endpoint - summary, description, and an existing
 external URL.
 
 ## Parameters
@@ -109,10 +117,15 @@ parameter. For example, is it required, the description, and the example value.
 ## Reserved Parameters
 
 These are used by Airnode before submitting values back to the blockchain. There
-are several restrictions around what you can and cannot handle on the
-blockchain, and these are handled by the reserved parameters. Read more about
-reserved parameters
-[here](https://docs.api3.org/ois/latest/reserved-parameters.html).
+are several restrictions around what can be handled on the
+blockchain and these are configured with the reserved parameters. Read more about
+[reserved parameters](https://docs.api3.org/ois/latest/reserved-parameters.html).
+
+| Parameter | Required | Purpose                                                                                                               |
+| --------- | -------- | --------------------------------------------------------------------------------------------------------------------- |
+| `_type`   | Yes      | Maps the value in the response to a [Solidity data type](https://docs.soliditylang.org/en/latest/abi-spec.html#types) |
+| `_path`   | No       | Defines the selection criteria for which values in the response should be sent back to the blockchain                 |
+| `_times`  | No       | Multiplies the value from the response by the number specified                                                        |
 
 ???+ info "Value Source"
 
@@ -120,18 +133,11 @@ reserved parameters
     <b>User Defined</b> to allow the callers of your Airnode to decide how to store
     the data on chain.
 
-    Only use the <b>Fixed</b> value source if you need to control the data that is
+    Use the <b>Fixed</b> value source if you need to control the data that is
     returned.
 
-The `_type` defines which Solidity data type the value in the response should
-map to.
-
-The `_path` defines how the values to be sent back to the blockchain should be
-selected.
-
-The `_times` parameter is useful when you’re dealing with numbers. Many
-blockchains don’t support decimal values, so using this parameter multiplies the
-api value by the value specified.
+    Use the <b>None</b> value source if you need an optional reserved parameter to be excluded
+    entirely.
 
 ### Multiple Reserved Parameters
 
@@ -170,6 +176,11 @@ There are three settings per snippet:
 Read more about
 [Pre/Post Processing](https://docs.api3.org/ois/latest/processing.html) on the
 Airnode documentation.
+
+### Cache Responses
+
+If enabled, responses on the Airnode will be cached and the cached response will
+be returned for the same request.
 
 ## Completion
 
