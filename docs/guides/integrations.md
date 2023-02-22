@@ -50,7 +50,7 @@ use when calling the any API operations.
 This is the first part of the URL to which all requests are made. The full
 request URL is made up of two parts: the Base URL and the path. The path is
 captured as part of each endpoint you add, we will expand on this under
-[New Endpoint](#new-endpoint).
+[New API Endpoint](#new-api-endpoint).
 
 ### Security Schemes
 
