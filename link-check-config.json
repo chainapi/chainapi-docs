@@ -6,7 +6,7 @@
     },
     {
       "pattern": "/ois/latest/",
-      "replacement": "/ois/v1.4/"
+      "replacement": "/ois/v1.499/"
     },
     {
       "pattern": "https://docs.api3.org/airnode$",
