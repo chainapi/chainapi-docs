@@ -24,3 +24,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CUSTOM_DOMAIN: docs.chainapi.com
+
+      - name: 💌 Slack Notification
+        uses: lazy-actions/slatify@master
+        if: failure()
+        with:
+          channel: "#notifications"
+          commit: true
+          job_name: ChainAPI Docs ⛔️ Build
+          token: ${{ secrets.GITHUB_TOKEN }}
+          type: ${{ job.status }}
+          url: ${{ secrets.SLACK_WEBHOOK_URL }}
