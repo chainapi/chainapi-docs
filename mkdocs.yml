@@ -14,6 +14,7 @@ copyright: >
 
 extra:
   generator: false
+  homepage: https://chainapi.com
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/chainapi
