@@ -64,5 +64,5 @@ magic link will expire after one hour.
 ### Connect with Metamask
 
 When using this option, be sure to use same account that you registered with.
-Opening MetaMask will show you the currently connected account, which is not
+Opening MetaMask will show you the account currently selected which is not
 necessarily the same account you registered with.
