@@ -1,18 +1,4 @@
 {
-  "replacementPatterns": [
-    {
-      "pattern": "/airnode/latest/",
-      "replacement": "/airnode/v0.10/"
-    },
-    {
-      "pattern": "/ois/latest/",
-      "replacement": "/ois/v1.4/"
-    },
-    {
-      "pattern": "https://docs.api3.org/airnode$",
-      "replacement": "https://docs.api3.org/airnode/v0.10"
-    }
-  ],
   "retryOn429": true,
   "retryCount": 1
 }
