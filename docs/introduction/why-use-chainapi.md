@@ -6,13 +6,13 @@ title: Why use ChainAPI?
 
 The simple answer is ChainAPI makes deploying an Airnode easier in comparison to
 building and deploying without, see
-[Build an Airnode](https://docs.api3.org/airnode/latest/grp-providers/guides/build-an-airnode/).
+[Deploying an Airnode on AWS](https://docs.api3.org/guides/airnode/deploy-airnode/deploy-aws/).
 Additionally, ChainAPI gets you to monetization faster and makes Airnode updates
 effortless. Once built, Airnode connects your API data to an entire universe of
 decentralized applications through its light, secure, and effortless Web3 API
 gateway. See
-[Why use Airnode?](https://docs.api3.org/airnode/latest/introduction/why-use-airnode.html) for more
-reasons to use an Airnode.
+[Pros and Cons (of using Airnode)](https://docs.api3.org/explore/airnode/pros-and-cons.html) 
+for more reasons to use an Airnode.
 
 ![Screenshot](../images/why-overview.png)
 

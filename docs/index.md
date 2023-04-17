@@ -5,8 +5,8 @@ title: What is ChainAPI?
 # What is ChainAPI?
 
 [ChainAPI](https://chainapi.com) enables you to integrate and deploy the open
-source [Airnode](https://docs.api3.org/airnode/latest/) for free with ChainAPI’s intuitive
-step-by-step integration and deployment tools.
+source [Airnode](https://docs.api3.org/reference/airnode/latest/) for free with 
+ChainAPI’s intuitive step-by-step integration and deployment tools.
 
 The ChainAPI platform streamlines API provider data to blockchain integrations.
 Using ChainAPI, API providers can configure and deploy an
@@ -18,7 +18,7 @@ implementation.
 ChainAPI can connect almost any API, whether open or authenticated, to Airnode.
 Airnode then queries your API operations to be consumed by EVM on-chain smart
 contracts, either by using the request/response protocol or the more popular
-on-chain [dAPI](https://docs.api3.org/dapis/) sets.
+on-chain [dAPI](https://docs.api3.org/reference/dapis/understand/) sets.
 
 Use the ChainAPI web based app to get started. The app will step you through the
 process. If needed, there are helpful hints in the

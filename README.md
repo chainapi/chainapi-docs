@@ -26,10 +26,6 @@ The main workflow builds the site and pushes this to the `gh-pages` branch. Gith
 
 The main workflow also checks for any broken hyperlinks using [markdown-link-check](https://github.com/tcort/markdown-link-check) wrapped in the [related action](https://github.com/marketplace/actions/markdown-link-check).
 
-The config file [link-config-check.json](link-check-config.json) defines a few rewrites we need to do due to the API3 docs site returning 404s instead of 302s when the `/latest/` link redirects to the latest version.
-
-When a new version of Airnode or OIS is released, the version number should be updated in this file.
-
 To run this locally, use this command:
 
 ```shell

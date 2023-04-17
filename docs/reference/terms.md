@@ -6,15 +6,16 @@ title: Terminology
 
 The general terms used by ChainAPI follow standard blockchain and REST API
 definitions. Other related Airnode
-[Concepts and Definitions](https://docs.api3.org/airnode/latest/concepts/) may be useful to better
-understand how Airnode works.
+[Concepts and Definitions](https://docs.api3.org/reference/airnode/latest/concepts/) 
+may be useful to better understand how Airnode works.
 
 ### Airnode
 
-[Airnode](https://docs.api3.org/airnode) is a serverless oracle node implemented with a "set
-and forget" philosophy. Airnode is composed of two parts: the off-chain Airnode
-(a.k.a. "the node") deployed as self-hosted or cloud provider functions (e.g.,
-AWS or GCP) and the on-chain protocol contract AirnodeRrpV0.sol.
+[Airnode](https://docs.api3.org/explore/airnode/what-is-airnode.html) is a serverless 
+oracle node implemented with a "set and forget" philosophy. Airnode is composed 
+of two parts: the off-chain Airnode (a.k.a. "the node") deployed as self-hosted 
+or cloud provider functions (e.g., AWS or GCP) and the on-chain protocol contract 
+AirnodeRrpV0.sol.
 
 ### API Card
 
@@ -41,8 +42,8 @@ a service. Blockchain nodes are essential for a functioning blockchain because
 the nodes store a full copy of the distributed ledger, and are necessary for
 blockchain developers to build decentralized applications. For Airnode they
 provide RPC access to a desired blockchain. Also see
-[Chain Providers](https://docs.api3.org/airnode/latest/concepts/chain-providers.html) in the Airnode
-documentation set.
+[Chain Providers](https://docs.api3.org/reference/airnode/latest/concepts/chain-providers.html) 
+in the Airnode documentation set.
 
 ### Cloud Provider
 
@@ -72,7 +73,7 @@ Airnode.
 
 A response from an API that indicates the API is active and working. Airnode can
 provide a webhook style
-[heartbeat](https://docs.api3.org/airnode/latest/grp-providers/guides/build-an-airnode/heartbeat.html)
+[heartbeat](https://docs.api3.org/reference/airnode/latest/understand/heartbeat.html)
 as an indicator that is is up and running. Setup of the heartbeat is an advanced
 configuration.
 
@@ -143,8 +144,8 @@ API endpoint parameters. They are used by Airnode for special purposes.
   response before fulfilling the request. Reserved parameter names start with
   `_`.
 
-See [Reserved Parameters](https://docs.api3.org/ois/latest/reserved-parameters.html) in the OIS
-documentation set.
+See [Reserved Parameters](https://docs.api3.org/reference/ois/latest/reserved-parameters.html) 
+in the OIS documentation set.
 
 ### Security Schemes
 
@@ -158,7 +159,7 @@ authenticate itself to API endpoints.
   - bearer
 
 See
-[API Security](https://docs.api3.org/airnode/latest/grp-providers/guides/build-an-airnode/api-security.html)
+[API Security](https://docs.api3.org/reference/airnode/latest/understand/api-security.html)
 in the Airnode documentation set.
 
 ### Versioning
