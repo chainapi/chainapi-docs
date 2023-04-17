@@ -27,7 +27,7 @@ your email address or by connecting with your Metamask wallet.
 Setting up an integration is the first step that is required to deploy an
 Airnode. Here you will capture the required details for your existing API, which
 will be used to populate the files for deploying an Airnode. See
-[Deployment Files](https://docs.api3.org/airnode/latest/reference/deployment-files/) in the
+[Deployment Files](https://docs.api3.org/reference/airnode/latest/deployment-files/) in the
 Airnode document set for more information.
 
 ## [Create a Deployment](deployments.md)

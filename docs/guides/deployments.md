@@ -14,7 +14,7 @@ There are a few things needed before creating a deployment:
 - A cloud provider account such as [AWS](https://aws.amazon.com/) or
   [GCP](https://cloud.google.com/)
 - A
-  [blockchain provider account](https://docs.api3.org/airnode/latest/concepts/chain-providers.html)
+  [blockchain provider account](https://docs.api3.org/reference/airnode/latest/concepts/chain-providers.html)
   for the networks required
 - [Docker](https://www.docker.com/)
 
@@ -97,7 +97,7 @@ Airnode’s endpoints.
 granted access to make requests to your Airnode’s endpoints.
 
 To learn more about authorizers,
-[check out these docs](https://docs.api3.org/airnode/latest/concepts/authorizers).
+[check out these docs](https://docs.api3.org/reference/airnode/latest/concepts/authorizers.html).
 
 ## Review Configuration
 
@@ -190,7 +190,7 @@ Please check if you have met all these prerequisites for your deployment:
     [GCP](https://cloud.google.com/)) with the provider you selected under the
     Cloud Provider Settings on the Settings and Networks page
 3.  You have
-    [blockchain provider account(s)](https://docs.api3.org/airnode/latest/concepts/chain-providers.html)
+    [blockchain provider account(s)](https://docs.api3.org/reference/airnode/latest/concepts/chain-providers.html)
     for each of the number of providers you selected under the Networks section
     on the Settings and Networks page
 4.  You have populated the secrets.env file with all the requested variables

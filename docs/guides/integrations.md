@@ -7,7 +7,7 @@ title: Integrations
 Setting up an integration is the first step that is required to deploy an
 Airnode. Here you will capture the required details for your existing API, which
 will be used to populate the files for deploying an Airnode. See
-[Deployment Files](https://docs.api3.org/airnode/latest/reference/deployment-files/) in the
+[Deployment Files](https://docs.api3.org/reference/airnode/latest/deployment-files/) in the
 Airnode document set for more information.
 
 Select the **Integrate** menu in the navigation bar on the left side of the
@@ -119,7 +119,7 @@ parameter. For example, is it required, the description, and the example value.
 These are used by Airnode before submitting values back to the blockchain. There
 are several restrictions around what can be handled on the
 blockchain and these are configured with the reserved parameters. Read more about
-[reserved parameters](https://docs.api3.org/ois/latest/reserved-parameters.html).
+[reserved parameters](https://docs.api3.org/reference/ois/latest/reserved-parameters.html).
 
 | Parameter | Required | Purpose                                                                                                               |
 | --------- | -------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -150,7 +150,7 @@ You need to provide the same number of values for all reserved parameters that
 use a <b>Fixed</b> value source.
 
 Read more about
-[multiple reserved parameters](https://docs.api3.org/ois/latest/reserved-parameters.html#encoding-multiple-values)
+[multiple reserved parameters](https://docs.api3.org/reference/ois/latest/reserved-parameters.html#encoding-multiple-values)
 on the Airnode documentation.
 
 ## Advanced Settings
@@ -174,8 +174,8 @@ There are three settings per snippet:
 3. Timeout - the duration in milliseconds your snippet is allowed to run in
 
 Read more about
-[Pre/Post Processing](https://docs.api3.org/ois/latest/processing.html) on the
-Airnode documentation.
+[Pre/Post Processing](https://docs.api3.org/reference/ois/latest/processing.html) 
+on the Airnode documentation.
 
 ### Cache Responses
 
