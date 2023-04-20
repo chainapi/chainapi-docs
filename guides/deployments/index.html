@@ -1,0 +1,1350 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../integrations/">
+      
+      
+        <link rel="next" href="../workspaces/">
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Deployments - ChainAPI Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Mulish";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#deployments" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://chainapi.com" title="ChainAPI Docs" class="md-header__button md-logo" aria-label="ChainAPI Docs" data-md-component="logo">
+      
+  <img src="../../images/logo-chainapi-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ChainAPI Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deployments
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://chainapi.com" title="ChainAPI Docs" class="md-nav__button md-logo" aria-label="ChainAPI Docs" data-md-component="logo">
+      
+  <img src="../../images/logo-chainapi-white.svg" alt="logo">
+
+    </a>
+    ChainAPI Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" tabindex="0" aria-expanded="false">
+          Introduction
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        What is ChainAPI?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/why-use-chainapi/" class="md-nav__link">
+        Why use ChainAPI?
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+          Guides
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guides" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../accounts/" class="md-nav__link">
+        Accounts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrations/" class="md-nav__link">
+        Integrations
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Deployments
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Deployments
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integrations" class="md-nav__link">
+    Integrations
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-provider-settings" class="md-nav__link">
+    Cloud Provider Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud Provider Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-provider" class="md-nav__link">
+    Cloud provider
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#region" class="md-nav__link">
+    Region
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#airnode-version" class="md-nav__link">
+    Airnode version
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networks" class="md-nav__link">
+    Networks
+  </a>
+  
+    <nav class="md-nav" aria-label="Networks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mainnets" class="md-nav__link">
+    Mainnets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testnets" class="md-nav__link">
+    Testnets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-providers" class="md-nav__link">
+    Public Providers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-provided" class="md-nav__link">
+    User Provided
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorizers" class="md-nav__link">
+    Authorizers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-configuration" class="md-nav__link">
+    Review Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-and-deploy" class="md-nav__link">
+    Download and Deploy
+  </a>
+  
+    <nav class="md-nav" aria-label="Download and Deploy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-files-and-edit" class="md-nav__link">
+    Download Files and Edit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-with-docker" class="md-nav__link">
+    Deploy with Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finish-deployment" class="md-nav__link">
+    Finish Deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="Finish Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-status" class="md-nav__link">
+    Check status
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-status-and-lifecycle" class="md-nav__link">
+    Deployment Status and Lifecycle
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment Status and Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lifecycle" class="md-nav__link">
+    Lifecycle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-deployments" class="md-nav__link">
+    Sub-deployments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workspaces/" class="md-nav__link">
+        Workspaces
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../import-export/" class="md-nav__link">
+        Import & Export OIS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#airnode" class="md-nav__link">
+        Airnode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#api-card" class="md-nav__link">
+        API Card
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#base-url" class="md-nav__link">
+        Base URL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#blockchain-providers" class="md-nav__link">
+        Blockchain Providers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#cloud-provider" class="md-nav__link">
+        Cloud Provider
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#deployment" class="md-nav__link">
+        Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#endpoint" class="md-nav__link">
+        Endpoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#heartbeat" class="md-nav__link">
+        Heartbeat
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#http" class="md-nav__link">
+        HTTP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#integration" class="md-nav__link">
+        Integration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#mainnet" class="md-nav__link">
+        Mainnet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#mnemonic" class="md-nav__link">
+        Mnemonic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#parameters" class="md-nav__link">
+        Parameters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#path" class="md-nav__link">
+        Path
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#reserved-parameters" class="md-nav__link">
+        Reserved Parameters
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#security-schemes" class="md-nav__link">
+        Security Schemes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/terms/#versioning" class="md-nav__link">
+        Versioning
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#integrations" class="md-nav__link">
+    Integrations
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration" class="md-nav__link">
+    Integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cloud-provider-settings" class="md-nav__link">
+    Cloud Provider Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Cloud Provider Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloud-provider" class="md-nav__link">
+    Cloud provider
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#region" class="md-nav__link">
+    Region
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#airnode-version" class="md-nav__link">
+    Airnode version
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#networks" class="md-nav__link">
+    Networks
+  </a>
+  
+    <nav class="md-nav" aria-label="Networks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mainnets" class="md-nav__link">
+    Mainnets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testnets" class="md-nav__link">
+    Testnets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    Network
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#public-providers" class="md-nav__link">
+    Public Providers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-provided" class="md-nav__link">
+    User Provided
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authorizers" class="md-nav__link">
+    Authorizers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-configuration" class="md-nav__link">
+    Review Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-and-deploy" class="md-nav__link">
+    Download and Deploy
+  </a>
+  
+    <nav class="md-nav" aria-label="Download and Deploy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-files-and-edit" class="md-nav__link">
+    Download Files and Edit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deploy-with-docker" class="md-nav__link">
+    Deploy with Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finish-deployment" class="md-nav__link">
+    Finish Deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="Finish Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#check-status" class="md-nav__link">
+    Check status
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-status-and-lifecycle" class="md-nav__link">
+    Deployment Status and Lifecycle
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment Status and Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lifecycle" class="md-nav__link">
+    Lifecycle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sub-deployments" class="md-nav__link">
+    Sub-deployments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="deployments">Deployments</h1>
+<!-- If you change the following paragraph, change it in the README. -->
+
+<p>This section will take you through deploying an Airnode. Multiple deployments
+can use the same integration if desired.</p>
+<p>There are a few things needed before creating a deployment:</p>
+<ul>
+<li>A cloud provider account such as <a href="https://aws.amazon.com/">AWS</a> or
+  <a href="https://cloud.google.com/">GCP</a></li>
+<li>A
+  <a href="https://docs.api3.org/reference/airnode/latest/concepts/chain-providers.html">blockchain provider account</a>
+  for the networks required</li>
+<li><a href="https://www.docker.com/">Docker</a></li>
+</ul>
+<p>Select <strong>Deploy</strong> in the navigation bar on the left side of the page. Then click
+the <strong>New Deployment</strong> button. You will then be guided through the deployment
+process.</p>
+<h2 id="integrations">Integrations</h2>
+<p>The deployment will use an <a href="../integrations/">integration</a> you have already
+created to define and deploy an Airnode to a cloud provider of your choice.</p>
+<h3 id="name">Name</h3>
+<p>Name your deployment. <strong>You won’t be able to change this after saving the
+deployment.</strong></p>
+<h3 id="integration">Integration</h3>
+<p>This is where you will select which integration(s) that you want to use, the
+version of the integration and the notes you captured during the integration
+associated with that version.</p>
+<h2 id="cloud-provider-settings">Cloud Provider Settings</h2>
+<p>Select the desired cloud provider and the region the Airnode should be deployed
+to.</p>
+<h3 id="cloud-provider">Cloud provider</h3>
+<p>Select the desired cloud provider.</p>
+<h3 id="region">Region</h3>
+<p>Select the desired region for your cloud provider.</p>
+<h3 id="airnode-version">Airnode version</h3>
+<p>The latest Airnode version will be selected by default and we recommend you
+leave it on the latest version unless you have a specific reason to select an
+older version.</p>
+<h2 id="networks">Networks</h2>
+<p>Here you will define which networks (chains) the Airnode will respond to.</p>
+<h3 id="mainnets">Mainnets</h3>
+<p>These are the chains that process actual transactions.</p>
+<h3 id="testnets">Testnets</h3>
+<p>These are test networks that can be used for testing your deployment and
+integrations.</p>
+<h3 id="network">Network</h3>
+<p>Here you will see all the networks (chains) that are supported and your Airnode
+will respond to.</p>
+<h3 id="public-providers">Public Providers</h3>
+<p>These are publicly available RPC URLs that provide access to the blockchain
+network. There is no cost while using them.</p>
+<h3 id="user-provided">User Provided</h3>
+<p>These are private RPC URLs, controlled either by yourself or a blockchain
+provider, that provide access to the blockchain network.</p>
+<h2 id="authorizers">Authorizers</h2>
+<p>Authorizer contracts allow you to specify which smart contracts can make
+requests to your Airnode’s endpoints.</p>
+<p><strong>Public</strong> authorizers allow any smart contract to make requests to your
+Airnode’s endpoints.</p>
+<p><strong>Restricted</strong> authorizers only allow smart contract addresses that have been
+granted access to make requests to your Airnode’s endpoints.</p>
+<p>To learn more about authorizers,
+<a href="https://docs.api3.org/reference/airnode/latest/concepts/authorizers.html">check out the API3 docs</a>.</p>
+<h2 id="review-configuration">Review Configuration</h2>
+<p>Review the deployment configuration before continuing. Go back to make changes
+if needed.</p>
+<h2 id="download-and-deploy">Download and Deploy</h2>
+<p>Here you will download the required deployment files to perform final editing of
+the required secrets.</p>
+<div class="admonition warning">
+<p class="admonition-title">Concurrency Warning</p>
+<p>Complete one deployment at a time. Starting multiple, simultaneous deployments
+will fail and need to be removed manually through your cloud provider’s web
+interface.</p>
+</div>
+<h3 id="download-files-and-edit">Download Files and Edit</h3>
+<p>These files are needed to deploy your Airnode.</p>
+<p>Follow the instructions in the <code>README</code> to update the other files with configuration
+details required for your specific setup.</p>
+<h3 id="deploy-with-docker">Deploy with Docker</h3>
+<p>Copy and paste the relevant command based on your operating system to your
+terminal at the directory with your config.json and secrets.env files.</p>
+<h2 id="finish-deployment">Finish Deployment</h2>
+<p>Click on the <strong>Finish Deployment</strong> button after you have completed the
+deployment. This will take you to your list of deployments and display their
+statuses.</p>
+<!-- Still need: Downloading and editing files (folder structure) The readme (display
+the actual readme in the documents page Add explanation for what a blockchain
+provider does Recommend multiple blockchain providers and explain what happens
+when one goes down (the why)
+
+Managing an existing deployment How adding / removing / changing APIs version
+will impact your Airnode How will adding or changing your network impact your
+Airnode How to delete a deployment (use docker) Deployment ReadMe (generalized
+readme)-->
+
+<h3 id="check-status">Check status</h3>
+<p>Once your deployment is completed, it will take a few minutes for the status to
+update to either <strong>Active</strong> or <strong>Timed Out</strong>.</p>
+<p>If your deployment is <strong>Active</strong>, that means that we have received the Airnode
+heartbeat and your Airnode is <strong>Active</strong>.</p>
+<p>If it’s <strong>Timed Out</strong>, something went wrong and you should start by checking the
+<a href="#troubleshooting">troubleshooting</a> below, and check docker for any errors
+during deployment.</p>
+<!--If successfully completed, your deployment’s status will become Active within 1
+minute. If your deployment is not active after clicking "Finish deployment",
+check your cloud provider logs and configuration details before redeploying.-->
+
+<h2 id="deployment-status-and-lifecycle">Deployment Status and Lifecycle</h2>
+<p>These are the possible deployment statuses you might see and what they mean.</p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deploying</td>
+<td>You have finished a new deployment and we are now waiting to receive a heartbeat from your Airnode</td>
+</tr>
+<tr>
+<td>Active</td>
+<td>We are receiving a heartbeat from your Airnode</td>
+</tr>
+<tr>
+<td>Deactivating</td>
+<td>You clicked <strong>Deactivate</strong> on your active deployment. Once you have run the command to deactivate your Airnode then: <br/>1. <strong>If successful</strong> your deployment becomes <strong>Inactive</strong> <br/> 2. <strong>If unsuccessful</strong> we will receive a heartbeat which will make your deployment <strong>Active</strong></td>
+</tr>
+<tr>
+<td>Inactive</td>
+<td>There are two scenarios for this status: <br/>1. You started a deployment and clicked <strong>Save for later</strong> <br/> 2. You clicked Deactivate on your active deployment, ran the command to deactivate your Airnode and we stopped receiving heartbeats</td>
+</tr>
+<tr>
+<td>Timed out</td>
+<td>We have not received a heartbeat for a <strong>Deploying</strong> or <strong>Active</strong> deployment</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lifecycle">Lifecycle</h3>
+<p><img alt="Deployment status lifecycle diagram" src="../../images/deployment-statuses-diagram.png" /></p>
+<h3 id="sub-deployments">Sub-deployments</h3>
+<p>Editing an active deployment will create a sub-deployment with a new heartbeat
+ID. This sub-deployment will replace your main deployment once its status is
+<strong>Active</strong>.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>Please check if you have met all these prerequisites for your deployment:</p>
+<ol>
+<li>You have <a href="https://docs.docker.com/get-started/overview/">Docker</a> installed</li>
+<li>You have a cloud provider account (<a href="https://aws.amazon.com/account/">AWS</a> or
+    <a href="https://cloud.google.com/">GCP</a>) with the provider you selected under the
+    Cloud Provider Settings on the Settings and Networks page</li>
+<li>You have
+    <a href="https://docs.api3.org/reference/airnode/latest/concepts/chain-providers.html">blockchain provider account(s)</a>
+    for each of the number of providers you selected under the Networks section
+    on the Settings and Networks page</li>
+<li>You have populated the secrets.env file with all the requested variables</li>
+</ol>
+<p>If you have met all the above, and you still have problems, please reach out to
+<a href="mailto:support@chainapi.com">support@chainapi.com</a> with a description of the
+problem you are facing and any error messages you are seeing in the command.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://chainapi.com/privacy-policy">Privacy Policy</a><br> <a href="https://chainapi.com/terms-and-conditions">Terms & Conditions</a><br> Copyright &copy; 2023 ChainAPI, Inc.
+
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://twitter.com/chainapi" target="_blank" rel="noopener" title="ChainAPI on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://medium.com/chainapi" target="_blank" rel="noopener" title="ChainAPI on Medium" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://linkedin.com/company/chainapi" target="_blank" rel="noopener" title="ChainAPI on LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>
