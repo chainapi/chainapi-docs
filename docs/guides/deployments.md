@@ -97,7 +97,7 @@ Airnode’s endpoints.
 granted access to make requests to your Airnode’s endpoints.
 
 To learn more about authorizers,
-[check out these docs](https://docs.api3.org/reference/airnode/latest/concepts/authorizers.html).
+[check out the API3 docs](https://docs.api3.org/reference/airnode/latest/concepts/authorizers.html).
 
 ## Review Configuration
 
